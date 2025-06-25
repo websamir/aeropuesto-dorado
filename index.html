@@ -8,162 +8,7 @@
     <meta name="description"
         content="Dourado Network monta salas VIP en aeropuertos de Colombia y México con servicios de spa, duchas, áreas de descanso y más.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #005B96;
-            --accent: #FABD2F;
-            --light-bg: #f8f9fa;
-            --text-dark: #333;
-            --text-light: #fff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        body {
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        header {
-            background: var(--primary);
-            color: var(--text-light);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 1rem 0;
-        }
-
-        nav a {
-            color: var(--text-light);
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-weight: 600;
-        }
-
-        .brand {
-            font-size: 1.5rem;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0, 91, 150, 0.6), rgba(0, 91, 150, 0.6)),
-                url('juego.png') center/cover no-repeat;
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            color: var(--text-light);
-        }
-
-        
-
-        .hero .content {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 2rem;
-            border-radius: 8px;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--text-dark);
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background .3s;
-        }
-
-        .btn:hover {
-            background: #e0a621;
-        }
-
-        section {
-            padding: 4rem 0;
-        }
-
-        /* section:nth-child(even) {
-            background: var(--light-bg);
-        } */
-
-        .services,
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card .info {
-            padding: 1rem;
-        }
-
-        .card h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        .locations ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-
-        .locations li {
-            flex: 1 1 200px;
-            background: #fff;
-            padding: 1rem;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background: var(--primary);
-            color: var(--text-light);
-            text-align: center;
-            padding: 2rem 0;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+   <link rel="stylesheet" href="src/styles/style.css">
 </head>
 
 <body>
@@ -200,28 +45,28 @@
             <h2 style="text-align:center; margin-bottom:2rem;">Nuestros Servicios</h2>
             <div class="services">
                 <div class="card">
-                    <img src="ducha.png" alt="Duchas calientes">
+                    <img src="src/images/ducha.png" alt="Duchas calientes">
                     <div class="info">
                         <h3>Duchas Calientes</h3>
                         <p>Espacios privados con agua caliente y toallas de cortesía.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="spa.png" alt="Spa">
+                    <img src="src/images/spa.png" alt="Spa">
                     <div class="info">
                         <h3>Spa & Masajes</h3>
                         <p>Relájate con masajes express y zonas de aromaterapia.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="comida.png">
+                    <img src="src/images/comida.png">
                     <div class="info">
                         <h3>Área de Comidas</h3>
                         <p>Buffet variado, snacks gourmet y bebidas premium.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="juego.png" alt="Juegos de mesa y billar">
+                    <img src="src/images/juego.png" alt="Juegos de mesa y billar">
                     <div class="info">
                         <h3>Entretenimiento</h3>
                         <p>Billar, juegos de mesa y televisores para eventos en vivo.</p>
@@ -237,28 +82,28 @@
             <h2 style="text-align:center; margin-bottom:2rem;">Comodidades Premium</h2>
             <div class="features">
                 <div class="card">
-                    <img src="sillas.png" alt="Sillas reclinables">
+                    <img src="src/images/sillas.png" alt="Sillas reclinables">
                     <div class="info">
                         <h3>Sillas Reclinómicas</h3>
                         <p>Descanso ergonómico en asientos de última generación.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="pods.png" alt="Pods de descanso">
+                    <img src="src/images/pods.png" alt="Pods de descanso">
                     <div class="info">
                         <h3>Pods de Descanso</h3>
                         <p>Privacidad total con camas estilo Google Pods.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="empresarial.png" alt="Sala empresarial">
+                    <img src="src/images/empresarial.png" alt="Sala empresarial">
                     <div class="info">
                         <h3>Ambiente Empresarial</h3>
                         <p>Espacios de trabajo con Wi-Fi ultra rápido y salas de reunión.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="relajacion.png" alt="Técnicas de relajación">
+                    <img src="src/images/relajacion.png" alt="Técnicas de relajación">
                     <div class="info">
                         <h3>Técnicas de Relajación</h3>
                         <p>Sesiones de respiración guiada y música ambiental selecta.</p>
